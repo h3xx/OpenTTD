@@ -149,8 +149,8 @@ set_target_properties(openttd PROPERTIES OUTPUT_NAME "${BINARY_NAME}")
 # All other files are added via target_sources()
 
 include(AddCustomXXXTimestamp)
-add_subdirectory(${CMAKE_SOURCE_DIR}/src)
-add_subdirectory(${CMAKE_SOURCE_DIR}/media/baseset)
+add_subdirectory(src)
+add_subdirectory(media)
 
 add_dependencies(openttd
     find_version)
